@@ -57,3 +57,14 @@ Persistence is browser `localStorage` (project config + language choice).
 ## Relation to pauldiee/VCF9-DeploymentPlanning
 
 Paul's public field guide (https://pauldiee.github.io/VCF9-DeploymentPlanning/) references this tool on its landing page and in Step 1 (`docs/01-network-dns-plan.md`) as a **generated starting point** for the network plan — generate here, then validate/own the result against that repo's sizing minimums, VM-Management carve-out, and network-team/architect hand-off. Findings made while using this tool with that flow are good candidates for upstream issues/PRs here.
+
+## Customer data hygiene
+
+Never commit example inputs/exports containing real customer names, site
+names, IPs, hostnames, VLAN IDs, or FQDN prefixes/suffixes into this repo
+(fork or upstream PRs) — use Rainpole-style placeholder values only.
+
+**Customer data is never used with Claude on this repo, period, no
+exceptions.** No real customer names, IPs, hostnames, credentials, or
+other identifying details are ever entered into a Claude session while
+working on this repo – not in chat text, not in a screenshot.
